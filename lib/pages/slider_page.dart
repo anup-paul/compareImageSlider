@@ -11,16 +11,35 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Home Page"),
       ),
-      body: Center(
-        child: SizedBox(
-          height: 500,
-          child: CompareImageSlider(
-            beforeImage: AssetImage('assets/images/image1.png'),
-            afterImage: AssetImage('assets/images/image2.png'),
-            initialPosition: 0.5, // Start in the middle
-            sliderColor: Colors.blue,
-            sliderThickness: 2.0,
-          ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(height: 100,),
+            SizedBox(
+              height: 500,
+              child: CompareImageSlider(
+                beforeImage: AssetImage('assets/images/image1.png'),
+                afterImage: AssetImage('assets/images/image2.png'),
+                initialPosition: 0.5, // Start in the middle
+                sliderColor: Colors.blue,
+                sliderThickness: 2.0,
+              ),
+            ),
+
+            SizedBox(height: 100,),
+
+            SizedBox(
+              height: 500,
+              child: CompareImageSlider(
+                beforeImage: AssetImage('assets/images/image3.png'),
+                afterImage: AssetImage('assets/images/image4.png'),
+                initialPosition: 0.5, // Start in the middle
+                sliderColor: Colors.blue,
+                sliderThickness: 2.0,
+              ),
+            ),
+            SizedBox(height: 100,),
+          ],
         ),
       ),
     );
