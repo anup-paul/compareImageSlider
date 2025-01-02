@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
                 beforeImage: AssetImage('assets/images/image1.png'),
                 afterImage: AssetImage('assets/images/image2.png'),
                 initialPosition: 0.5, // Start in the middle
-                sliderColor: Colors.blue,
+                sliderColor: Colors.white,
                 sliderThickness: 2.0,
               ),
             ),
@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
                 beforeImage: AssetImage('assets/images/image3.png'),
                 afterImage: AssetImage('assets/images/image4.png'),
                 initialPosition: 0.5, // Start in the middle
-                sliderColor: Colors.blue,
+                sliderColor: Colors.white,
                 sliderThickness: 2.0,
               ),
             ),
